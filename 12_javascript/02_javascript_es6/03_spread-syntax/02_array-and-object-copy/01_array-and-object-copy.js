@@ -16,7 +16,7 @@ let obj = {name: '홍길동', age: 20, addr: '서울시', hobby: ['축구', '농
 let objCopy3 = {...obj};    // 사본 만들기
 
 let age = 30;
-let objCopy4 = {...obj, age, name};
+let objCopy4 = {...obj, age};
 
 console.log(obj);
 console.log(objCopy4);
