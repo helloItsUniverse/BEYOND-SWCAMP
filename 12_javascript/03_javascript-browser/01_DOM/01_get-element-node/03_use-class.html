@@ -26,8 +26,9 @@
         [...$drinks].forEach(drink => drink.style.color = 'red');
 
         const $coffee = document.getElementsByClassName('drink coffee');
-        console.log($coffee[0].innerHTML);  
-        console.log($coffee[0].innerText);  
+        console.log($coffee);
+        console.log($coffee[0].innerHTML);      // Text Node에서 HTML을 포함한 내용 추출(시작 태그와 종료 태그 사이)
+        console.log($coffee[0].innerText);      // Text Node에서 HTML을 제외한 문자열만 추출
 
         const $available = document.getElementById('available');
         const $availableDrinks = $available.getElementsByClassName('drink');
